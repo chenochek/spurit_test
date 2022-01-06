@@ -1,0 +1,55 @@
+* {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background: cornsilk;
+    text-align: left;
+}
+
+
+.article {
+    max-width: 680px;
+    background: rgba(255, 0, 0, 0);
+    padding: 24px;
+}
+
+.article__heading {
+    margin: 0 0 1.5rem 0;
+    color: palevioletred
+}
+
+.article__lead {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-style: italic;
+    font-family: serif;
+}
+
+
+.figure {
+    margin-top: 16px;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.figure__caption {
+    background: cornsilk;
+    text-align: center;
+    font-style: italic;
+    margin: 8px 0 1rem;
+}
+
+
+
+.figure__image{
+    position: relative;
+    height: auto;
+    max-width: 100%;
+    margin: 0;
+}
+
+

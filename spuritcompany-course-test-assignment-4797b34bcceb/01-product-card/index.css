@@ -1,0 +1,147 @@
+/* Смотри сколько снизу свободного места! Оно идеально подойдёт, чтобы писать твои стили! */
+
+body {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #2F2F2F;
+    background-color: #F6F6F6;
+}
+
+.heading {
+    font-weight: 900;
+    font-size: 3rem;
+    text-align: center;
+    color: #000;
+    text-transform: uppercase;
+    margin-top:40px;
+    margin-bottom: 40px;
+}
+.products {
+    max-width: 1180px;
+    margin: 40px auto 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.products__card {
+    margin: auto;
+}
+
+
+.card {
+    max-width: 380px;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    display: grid ;
+    grid-template-rows: 2fr 2fr 1fr;
+}
+
+
+.card__labels {
+    margin: 17px;
+    position: absolute;
+}
+
+.card__label {
+    border-radius: 8px;
+    padding: 2px 16px;
+    margin-right: 17px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.card__label--new {
+    background-color: #FDCFF3;
+}
+
+.card__label--last {
+    background-color: #FFCF56;
+}
+
+.card__image {
+    border-radius: 12px;
+    width: 100%;
+}
+
+.card__text {
+    padding: 24px;
+}
+
+.card__title {
+    font-weight: 900;
+    font-size: 1.5rem;
+    margin-bottom: 16px;
+}
+
+.card__button-container {
+    padding: 24px;
+    align-self: flex-end;
+}
+
+.card__button {
+    cursor: pointer;
+    border-radius: 8px;
+    font-weight: 900;
+    font-size: 1.125rem;
+    line-height: 1.41;
+    text-align: center;
+    color: #42940F;
+    text-transform: uppercase;
+    background-color: #FFFFFF;
+    border: 2px solid #42940F;
+    width: 100%;
+    padding-top: 8px;
+    padding-bottom: 8px;
+
+}
+
+
+.card__button:hover {
+    background-color: #42940F;
+    color: #FFFFFF;
+}
+
+.card__button:active {
+    background-color: #1F5200;
+    color: #FFFFFF;
+    border: 2px solid #1F5200;
+}
+
+.card__button:disabled {
+    background-color: #4E4E4E;
+    color: #FFFFFF;
+    border: 1px solid #4E4E4E;
+    cursor: not-allowed;
+}
+
+@media (max-width: 1280px) {
+
+    .card {
+        max-width: 700px;
+        width: 90%;
+        margin: auto auto 20px;
+        grid-template-rows: 2fr 1fr 1fr;
+    }
+}
+
+@media (max-width: 767px) {
+    .heading {
+        font-size: 2rem;
+        margin-top:20px;
+        margin-bottom: 20px;
+    }
+
+    .card {
+        max-width: 300px;
+        margin: auto auto 20px;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .card__title {
+        font-size: 1rem;
+    }
+}
